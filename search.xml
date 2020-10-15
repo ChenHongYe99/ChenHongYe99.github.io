@@ -75,6 +75,35 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo博客配置RSS插件</title>
+    <url>/2019/07/23/Hexo%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AERSS%E6%8F%92%E4%BB%B6/</url>
+    <content><![CDATA[<h5 id="Tips-前导必备"><a href="#Tips-前导必备" class="headerlink" title="Tips:前导必备"></a>Tips:前导必备</h5><ul>
+<li><a href="https://zhousiwei.gitee.io/">博主博客地址</a></li>
+<li>博主使用的是**<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">hexo-theme-yilia-plus</a>**主题</li>
+</ul>
+<hr>
+<h3 id="1、安装rss插件"><a href="#1、安装rss插件" class="headerlink" title="1、安装rss插件"></a>1、安装rss插件</h3><blockquote>
+<p>在站点根目录下安装</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+<h3 id="2、配置-config-yml文件，启用插件"><a href="#2、配置-config-yml文件，启用插件" class="headerlink" title="2、配置_config.yml文件，启用插件"></a>2、配置<code>_config.yml</code>文件，启用插件</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="attr">plugins:</span></span><br><span class="line">  <span class="string">hexo-generator-feed</span></span><br><span class="line"><span class="comment">#Feed Atom</span></span><br><span class="line"><span class="attr">feed:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">atom</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">atom.xml</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">20</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3、在hexo-theme-yilia-plus主题添加RSS订阅配置-可以跳过此步骤"><a href="#3、在hexo-theme-yilia-plus主题添加RSS订阅配置-可以跳过此步骤" class="headerlink" title="3、在hexo-theme-yilia-plus主题添加RSS订阅配置(可以跳过此步骤)"></a>3、在<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">hexo-theme-yilia-plus</a>主题添加RSS订阅配置<code>(可以跳过此步骤)</code></h3><blockquote>
+<p>theme-yilia-plus</p>
+</blockquote>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># RSS订阅</span></span><br><span class="line"><span class="attr">rss:</span> <span class="string">/atom.xml</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4、生成RSS订阅文件"><a href="#4、生成RSS订阅文件" class="headerlink" title="4、生成RSS订阅文件"></a>4、生成RSS订阅文件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/2743275-b19c2b7b98555d4d.png"></p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo博客添加helper-live2d动态模型插件</title>
     <url>/2019/05/05/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0helper-live2d%E5%8A%A8%E6%80%81%E6%A8%A1%E5%9E%8B%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<h5 id="Tips-前导必备"><a href="#Tips-前导必备" class="headerlink" title="Tips:前导必备"></a>Tips:前导必备</h5><ul>
@@ -136,35 +165,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo博客配置RSS插件</title>
-    <url>/2019/07/23/Hexo%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AERSS%E6%8F%92%E4%BB%B6/</url>
-    <content><![CDATA[<h5 id="Tips-前导必备"><a href="#Tips-前导必备" class="headerlink" title="Tips:前导必备"></a>Tips:前导必备</h5><ul>
-<li><a href="https://zhousiwei.gitee.io/">博主博客地址</a></li>
-<li>博主使用的是**<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">hexo-theme-yilia-plus</a>**主题</li>
-</ul>
-<hr>
-<h3 id="1、安装rss插件"><a href="#1、安装rss插件" class="headerlink" title="1、安装rss插件"></a>1、安装rss插件</h3><blockquote>
-<p>在站点根目录下安装</p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-<h3 id="2、配置-config-yml文件，启用插件"><a href="#2、配置-config-yml文件，启用插件" class="headerlink" title="2、配置_config.yml文件，启用插件"></a>2、配置<code>_config.yml</code>文件，启用插件</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="attr">plugins:</span></span><br><span class="line">  <span class="string">hexo-generator-feed</span></span><br><span class="line"><span class="comment">#Feed Atom</span></span><br><span class="line"><span class="attr">feed:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">atom</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">atom.xml</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">20</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="3、在hexo-theme-yilia-plus主题添加RSS订阅配置-可以跳过此步骤"><a href="#3、在hexo-theme-yilia-plus主题添加RSS订阅配置-可以跳过此步骤" class="headerlink" title="3、在hexo-theme-yilia-plus主题添加RSS订阅配置(可以跳过此步骤)"></a>3、在<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">hexo-theme-yilia-plus</a>主题添加RSS订阅配置<code>(可以跳过此步骤)</code></h3><blockquote>
-<p>theme-yilia-plus</p>
-</blockquote>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># RSS订阅</span></span><br><span class="line"><span class="attr">rss:</span> <span class="string">/atom.xml</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="4、生成RSS订阅文件"><a href="#4、生成RSS订阅文件" class="headerlink" title="4、生成RSS订阅文件"></a>4、生成RSS订阅文件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-
-<p><img src="/images/2743275-b19c2b7b98555d4d.png"></p>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo博客集成Gitment评论</title>
     <url>/2019/07/24/Hexo%E5%8D%9A%E5%AE%A2%E9%9B%86%E6%88%90Gitment%E8%AF%84%E8%AE%BA/</url>
     <content><![CDATA[<h5 id="Tips-前导必备"><a href="#Tips-前导必备" class="headerlink" title="Tips:前导必备"></a>Tips:前导必备</h5><ul>
@@ -194,6 +194,36 @@
 <p><strong>hexo-theme-yilia-plus配置Demo ➡️ <a href="https://joeybling.github.io/yilia-plus-demo">https://joeybling.github.io/yilia-plus-demo</a></strong></p>
 </blockquote>
 <p><img src="/images/2743275-9bd93b4ded42a272.png"></p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo编译文档时JS或HTML混乱解决方案</title>
+    <url>/2019/07/26/Hexo%E7%BC%96%E8%AF%91%E6%96%87%E6%A1%A3%E6%97%B6JS%E6%88%96HTML%E6%B7%B7%E4%B9%B1%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<h5 id="Tips-前导必备"><a href="#Tips-前导必备" class="headerlink" title="Tips:前导必备"></a>Tips:前导必备</h5><ul>
+<li><a href="https://zhousiwei.gitee.io/">博主博客地址</a></li>
+<li>博主使用的是**<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">hexo-theme-yilia-plus</a>**主题</li>
+</ul>
+<blockquote>
+<p>之前为在 GitHub 博客上写自己的 html 网页，在 hexo 根目录下的 source 文件夹中放了自己的 js 文件，每次 <code>hexo g</code> 后，pubic 文件夹中的 js 文件就混乱了，与自己实际 js 不一致。</p>
+</blockquote>
+<h3 id="解决方案-跳过-hexo-渲染"><a href="#解决方案-跳过-hexo-渲染" class="headerlink" title="解决方案(跳过 hexo 渲染)"></a>解决方案(跳过 hexo 渲染)</h3><blockquote>
+<p><strong>Hexo 3.0 以上支持</strong><br>修改 Hexo 主目录下的 _config.yml 配置文件中的 <code>skip_render</code> 参数。</p>
+</blockquote>
+<a id="more"></a>
+
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">skip_render:</span> <span class="string">&quot;test.html&quot;</span>    <span class="comment"># source 文件夹下指定文件</span></span><br><span class="line"></span><br><span class="line"><span class="attr">skip_render:</span> <span class="string">test/*</span>    <span class="comment"># 单个文件夹下全部文件</span></span><br><span class="line"></span><br><span class="line"><span class="attr">skip_render:</span> <span class="string">test/*.md</span>    <span class="comment"># 单个文件夹下指定类型文件</span></span><br><span class="line"></span><br><span class="line"><span class="attr">skip_render:</span> <span class="string">test/**</span>    <span class="comment"># 单个文件夹下全部文件及子文件</span></span><br><span class="line"></span><br><span class="line"><span class="attr">skip_render:</span>         <span class="comment"># 多个文件夹以及其他情况</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">test/*</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">test/*.html</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>博主自己的配置如下</p>
+</blockquote>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 跳过 hexo 渲染</span></span><br><span class="line"><span class="attr">skip_render:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">anires/**</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">assets/**</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">gitment/**</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">baidu_sitepush/**</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">canvas_nest/**</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">docs/**</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&#x27;baidu_verify_QzGNSJ7F59.html&#x27;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&#x27;*.html&#x27;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&#x27;*.js&#x27;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">README.md</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&#x27;*.sh&#x27;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&#x27;*.txt&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注：若修改配置后不见效果，先执行 <code>hexo clean</code> 后再执行 <code>hexo g</code> 重新编译</p>
+</blockquote>
 ]]></content>
       <tags>
         <tag>Hexo</tag>
@@ -266,36 +296,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo编译文档时JS或HTML混乱解决方案</title>
-    <url>/2019/07/26/Hexo%E7%BC%96%E8%AF%91%E6%96%87%E6%A1%A3%E6%97%B6JS%E6%88%96HTML%E6%B7%B7%E4%B9%B1%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<h5 id="Tips-前导必备"><a href="#Tips-前导必备" class="headerlink" title="Tips:前导必备"></a>Tips:前导必备</h5><ul>
-<li><a href="https://zhousiwei.gitee.io/">博主博客地址</a></li>
-<li>博主使用的是**<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus">hexo-theme-yilia-plus</a>**主题</li>
-</ul>
-<blockquote>
-<p>之前为在 GitHub 博客上写自己的 html 网页，在 hexo 根目录下的 source 文件夹中放了自己的 js 文件，每次 <code>hexo g</code> 后，pubic 文件夹中的 js 文件就混乱了，与自己实际 js 不一致。</p>
-</blockquote>
-<h3 id="解决方案-跳过-hexo-渲染"><a href="#解决方案-跳过-hexo-渲染" class="headerlink" title="解决方案(跳过 hexo 渲染)"></a>解决方案(跳过 hexo 渲染)</h3><blockquote>
-<p><strong>Hexo 3.0 以上支持</strong><br>修改 Hexo 主目录下的 _config.yml 配置文件中的 <code>skip_render</code> 参数。</p>
-</blockquote>
-<a id="more"></a>
-
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">skip_render:</span> <span class="string">&quot;test.html&quot;</span>    <span class="comment"># source 文件夹下指定文件</span></span><br><span class="line"></span><br><span class="line"><span class="attr">skip_render:</span> <span class="string">test/*</span>    <span class="comment"># 单个文件夹下全部文件</span></span><br><span class="line"></span><br><span class="line"><span class="attr">skip_render:</span> <span class="string">test/*.md</span>    <span class="comment"># 单个文件夹下指定类型文件</span></span><br><span class="line"></span><br><span class="line"><span class="attr">skip_render:</span> <span class="string">test/**</span>    <span class="comment"># 单个文件夹下全部文件及子文件</span></span><br><span class="line"></span><br><span class="line"><span class="attr">skip_render:</span>         <span class="comment"># 多个文件夹以及其他情况</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">test/*</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">test/*.html</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>博主自己的配置如下</p>
-</blockquote>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 跳过 hexo 渲染</span></span><br><span class="line"><span class="attr">skip_render:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">anires/**</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">assets/**</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">gitment/**</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">baidu_sitepush/**</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">canvas_nest/**</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">docs/**</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&#x27;baidu_verify_QzGNSJ7F59.html&#x27;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&#x27;*.html&#x27;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&#x27;*.js&#x27;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">README.md</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&#x27;*.sh&#x27;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&#x27;*.txt&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>注：若修改配置后不见效果，先执行 <code>hexo clean</code> 后再执行 <code>hexo g</code> 重新编译</p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>IDEA设置后端代码开发规范</title>
     <url>/2019/01/23/IDEA%E8%AE%BE%E7%BD%AE%E5%90%8E%E7%AB%AF%E4%BB%A3%E7%A0%81%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/</url>
     <content><![CDATA[<h5 id="1、IDEA-配置svn"><a href="#1、IDEA-配置svn" class="headerlink" title="1、IDEA 配置svn"></a>1、IDEA 配置svn</h5><p>提交svn报错：<img src="/yilia-plus-demo/images/2743275-ef2b3fcbeb66c50b.png"></p>
@@ -353,28 +353,6 @@
       </tags>
   </entry>
   <entry>
-    <title>圣诞到了，帮修改一个头像</title>
-    <url>/2012/12/19/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <tags>
-        <tag>设计</tag>
-        <tag>杂谈</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>gulp-babel 取消严格模式(&quot;use strict&quot;)</title>
     <url>/2019/07/23/gulp-babel%E5%8F%96%E6%B6%88%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8Fuse%20strict/</url>
     <content><![CDATA[<blockquote>
@@ -394,6 +372,28 @@
 ]]></content>
       <tags>
         <tag>日记本</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>圣诞到了，帮修改一个头像</title>
+    <url>/2012/12/19/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <tags>
+        <tag>设计</tag>
+        <tag>杂谈</tag>
       </tags>
   </entry>
   <entry>
