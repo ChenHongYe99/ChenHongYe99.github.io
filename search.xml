@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>正则表达式</title>
+    <url>/2020/10/18/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo搭建个人博客</title>
     <url>/2020/10/16/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h3 id="1-环境准备"><a href="#1-环境准备" class="headerlink" title="1.环境准备"></a>1.环境准备</h3><ul>
@@ -104,11 +112,36 @@
       </tags>
   </entry>
   <entry>
-    <title>正则表达式</title>
-    <url>/2020/10/18/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
-    <content><![CDATA[]]></content>
+    <title>顺序链表的实现</title>
+    <url>/2020/11/04/%E9%A1%BA%E5%BA%8F%E9%93%BE%E8%A1%A8%E7%9A%84%E5%AE%9E%E7%8E%B0/</url>
+    <content><![CDATA[<h1 id="零散知识点"><a href="#零散知识点" class="headerlink" title="零散知识点"></a>零散知识点</h1><h4 id="1-malloc函数"><a href="#1-malloc函数" class="headerlink" title="1.malloc函数"></a>1.malloc函数</h4><blockquote>
+<p>#include “stdlib.h”</p>
+</blockquote>
+<p>作用：用于生成一大片连续的存储空间，返回一个头地址指针</p>
+<p><img src="/images/34PN$%7B18H121%5DJ$TR4XD%5DBM.png"></p>
+<h1 id="静态定义链表"><a href="#静态定义链表" class="headerlink" title="静态定义链表"></a>静态定义链表</h1><p>main.cpp</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;Linear.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span>** argv)</span> </span>&#123;</span><br><span class="line">	SqlList L;</span><br><span class="line">	InitList(L);</span><br><span class="line">	PrintList(L);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Linear.h</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MaxSize 10</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span>&#123;</span></span><br><span class="line">	<span class="keyword">int</span> data[MaxSize];</span><br><span class="line">	<span class="keyword">int</span> lengh;</span><br><span class="line">&#125;SqlList;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化数据元素 </span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InitList</span><span class="params">(SqlList &amp;L)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//输出数组</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">PrintList</span><span class="params">(SqlList L)</span></span>; </span><br></pre></td></tr></table></figure>
+
+<p>Linear.cpp</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;Linear.h&quot;</span></span></span><br><span class="line"><span class="comment">//初始化数据元素 ,防止内存中遗留的脏数据 </span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InitList</span><span class="params">(SqlList &amp;L)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; MaxSize ; i++)&#123;</span><br><span class="line">		L.data[i] = <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	L.lengh = <span class="number">0</span>; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//打印链表 </span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">PrintList</span><span class="params">(SqlList L)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; L.lengh ; i++)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span> , L.data[i]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="动态定义链表"><a href="#动态定义链表" class="headerlink" title="动态定义链表"></a>动态定义链表</h1><p>main.cpp</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>Linear.h</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>Linear.cpp</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
       <tags>
-        <tag>java</tag>
+        <tag>C</tag>
       </tags>
   </entry>
   <entry>
